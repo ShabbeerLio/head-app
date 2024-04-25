@@ -1,0 +1,97 @@
+.HomeAbout {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+.HomeAbout-main {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+}
+
+.homeabout-left h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.homeabout-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.homeabout-left {
+  width: 50%;
+}
+.homeabout-left h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+.homeabout-left ul li {
+  font-size: 18px;
+}
+.homeabout-left ul li::marker {
+  color: goldenrod;
+  font-size: 25px;
+}
+
+.homeabout-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+.homeabout-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  background-color: goldenrod;
+  color: black;
+  border-radius: 8px;
+}
+.homeabout-right {
+  width: 50%;
+}
+.homeabout-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.homeabout-quality-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .HomeAbout-main {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .homeabout-box {
+    flex-wrap: wrap;
+  }
+
+  .homeabout-left,
+  .homeabout-right {
+    width: 100%;
+  }
+  .homeabout-quality-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .homeabout-button a {
+    width: 100%;
+  }
+}
