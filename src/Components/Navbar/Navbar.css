@@ -365,6 +365,7 @@
     align-items: center;
     justify-content: flex-start;
     margin: 10px 0px;
+    bottom: -10%;
   }
   .fix-icon-enquery {
     right: -5%;

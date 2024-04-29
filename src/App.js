@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Home title={""} descriptions={""} />} />
+        <Route path="/headapp/" exact element={<Home title={""} descriptions={""} />} />
       </Routes>
       <Footer />
     </BrowserRouter>

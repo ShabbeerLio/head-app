@@ -64,7 +64,7 @@ const Navbar = (props) => {
                                 <div className="company-logo-box">
                                     <Link
                                         className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
-                                        to="/"
+                                        to="/headapp/"
                                         onClick={() => handleLinkClick('/')}
                                     >
                                         <img src={Logo} alt="" />
@@ -91,7 +91,7 @@ const Navbar = (props) => {
                                         <li className="nav-item">
                                             <Link
                                                 className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
-                                                to="/"
+                                                to="/headapp/"
                                                 onClick={() => handleLinkClick('/')}
                                             >
                                                 Home

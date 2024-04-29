@@ -1,6 +1,6 @@
 {
   "name": "head-app",
-  "homepage": "https://globalitsources.com/headapp",
+  "homepage": "https://globalitsources.com/headapp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
