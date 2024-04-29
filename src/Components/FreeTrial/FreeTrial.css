@@ -1,0 +1,71 @@
+.FreeTrial {
+  width: 100%;
+  /* padding: 6rem 0rem; */
+  background-color: #223046;
+}
+
+.FreeTrial-main {
+  display: flex;
+  gap: 3rem;
+}
+.freetrail-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding-left: 4rem;
+}
+.freetrail-left h3 {
+  color: #f8b334;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.freetrail-left p {
+  color: rgb(175, 175, 175);
+  font-size: 14px;
+}
+
+.freetrail-right {
+  width: 50%;
+}
+
+.freetrail-right img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.freetrial-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+.freetrial-button a {
+  text-decoration: none;
+  border: 1px solid #f8b334;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.freetrial-button a:hover {
+  background-color: #f8b334;
+  color: #223046;
+}
+
+@media only screen and (max-width: 680px) {
+  .FreeTrial-main {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .freetrail-left {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .freetrail-right {
+    width: 100%;
+  }
+}

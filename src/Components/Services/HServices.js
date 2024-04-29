@@ -1,5 +1,13 @@
 import React from 'react'
 import "./HServices.css"
+import { Link } from 'react-router-dom'
+import cancer from "../../Assets/Services/cancer.png"
+import liver from "../../Assets/Services/liver.png"
+import kedney from "../../Assets/Services/kedney.png"
+import cardiac from "../../Assets/Services/cardiac.png"
+import neurology from "../../Assets/Services/neurology.png"
+import orthopedic from "../../Assets/Services/Orthopedic.png"
+import ServiceData from './ServicesData'
 
 const HServices = () => {
     return (
@@ -11,7 +19,16 @@ const HServices = () => {
                 </div>
                 <div className="hservices-body">
                     <div className="hsrevice-items">
-                        
+                        {ServiceData.map((item) => (
+                            <div className="hservices-card" key={item.id}>
+                                <img src={item.image} alt="" />
+                                <h3>{item.serviceName}</h3>
+                                <p>{item.description}</p>
+                                <div className="hservices-card-button">
+                                    <Link>Read More</Link>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

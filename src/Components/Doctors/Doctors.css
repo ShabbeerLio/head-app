@@ -1,0 +1,73 @@
+.Doctors {
+  width: 100%;
+  padding: 5rem 0rem;
+  background-color: #f1f1f1;
+}
+.Doctors-main {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+}
+
+.doctors-card {
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+.doctor-card-imag{
+  height: 180px;
+  width: 180px;
+  margin-bottom: 1rem;
+}
+.doctors-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.doctors-card h3 {
+  font-size: 22px;
+}
+.doctors-card h5 {
+  font-size: 18px;
+  color: #f8b334;
+}
+.doctors-card p {
+  font-size: 14px;
+  color: rgb(112, 112, 112);
+}
+
+.doctors-box .owl-nav button {
+  background-color: white !important;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 25px !important;
+}
+.doctors-box .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -1%;
+}
+.doctors-box .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  right: -1%;
+}
+
+@media screen and (min-width: 1200px) {
+  .Doctors-main {
+    max-width: 1140px;
+  }
+}

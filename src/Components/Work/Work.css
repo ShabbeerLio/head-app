@@ -1,0 +1,120 @@
+.Work {
+  width: 100%;
+  padding: 5rem 0rem;
+  background-image: url("../../Assets/Work/headapp2.jpg");
+  background-repeat: no-repeat;
+  background-color: #f3fcfb;
+}
+
+.Work-main {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+}
+
+.work-card {
+  margin: 0px 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.work-card:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    border-radius: 8px;
+    display: inline-block;
+    opacity: 0.9;
+    background-image: linear-gradient(0deg, #000 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+.work-card-imag img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.work-card-detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1;
+  transition: all .5s;
+  display: flex;
+  align-items: center;
+}
+
+.work-card-detail p{
+  margin: 0;
+  margin-right: 15px;
+}
+
+.work-card-detail p svg{
+  color: #f8b334;
+  font-size: 25px;
+}
+
+.work-card-detail h3 {
+  margin: 0;
+  width: 100%;
+  color: white;
+}
+
+.work-card-bottom {
+  bottom: -100%;
+  position: absolute;
+  margin: 0;
+  padding: 0px 15px;
+  background-color: #f8b334b0;
+  height: 100%;
+  border-radius: 8px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: all .5s;
+}
+
+.work-card:hover .work-card-bottom {
+  bottom: 0%;
+}
+
+.work-card:hover .work-card-detail {
+    bottom: -20%;
+}
+
+.work-box .owl-nav button {
+  background-color: white !important;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 25px !important;
+}
+
+.work-box .owl-nav button.owl-prev {
+  position: absolute;
+  top: 45%;
+  left: -1%;
+}
+
+.work-box .owl-nav button.owl-next {
+  position: absolute;
+  top: 45%;
+  right: -1%;
+}
+
+@media screen and (min-width: 1200px) {
+  .Work-main {
+    max-width: 1140px;
+  }
+}

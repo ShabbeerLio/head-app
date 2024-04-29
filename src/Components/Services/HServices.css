@@ -1,7 +1,9 @@
 .HServices {
   width: 100%;
   padding: 5rem 0rem;
-  background-color: #58585a;
+  background-image: url("../../Assets/Services/services-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: #f3fcfb;
 }
 .HServices-main {
   width: 100%;
@@ -10,25 +12,79 @@
   padding: 0px 15px;
 }
 
-.hservices-head{
+.hservices-head {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: black;
 }
-.hservices-head h2{
+.hservices-head h2 {
   text-align: center;
   font-size: 30px;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
-.hservices-head p{
+.hservices-head p {
   text-align: center;
- width: 70%;
+  width: 70%;
+  margin-bottom: 2rem;
+  color: rgb(77, 77, 77);
+}
+
+.hsrevice-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.hservices-card {
+  text-align: center;
+  background-color: #29292913;
+  border-radius: 8px;
+  padding: 2rem;
+}
+.hservices-card img {
+  width: 20%;
+  aspect-ratio: 2/2;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.hservices-card h3 {
+  font-size: 18px;
+}
+.hservices-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.hservices-card .hservices-card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hservices-card .hservices-card-button a {
+  width: 100%;
+  background-color: #f8b334;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
   .HServices-main {
     max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .hsrevice-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .hservices-head p {
+    width: 100%;
   }
 }

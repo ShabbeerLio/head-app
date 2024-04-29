@@ -1,0 +1,76 @@
+.Clients {
+  width: 100%;
+  padding: 5rem 0rem;
+  background-image: url("../../Assets/Clients/clients.jpeg");
+  background-repeat: no-repeat;
+  background-color: #f3fcfb;
+}
+.Clients-main {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+}
+
+.client-card {
+  margin: 0px 10px;
+  /* background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px; */
+}
+
+.client-card-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.client-card-head img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.client-head-imag {
+  height: 80px;
+  width: 80px;
+  margin-right: 1rem;
+}
+
+.client-head-title h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.client-head-title p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.clients-box .owl-nav button {
+    background-color: white !important;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 25px !important;
+  }
+  .clients-box .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -3%;
+  }
+  .clients-box .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    right: -3%;
+  }
+
+@media screen and (min-width: 1200px) {
+  .Clients-main {
+    max-width: 1140px;
+  }
+}

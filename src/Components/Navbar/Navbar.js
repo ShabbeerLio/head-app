@@ -99,46 +99,53 @@ const Navbar = (props) => {
                                         </li>
                                         <li className="nav-item">
                                             <Link
-                                                className={`nav-link ${activeLink === '/gallery' ? 'active' : ''}`}
-                                                to="/gallery"
-                                                onClick={() => handleLinkClick('/gallery')}
+                                                className={`nav-link ${activeLink === '/about' ? 'active' : ''}`}
+                                                to="/about"
+                                                onClick={() => handleLinkClick('/about')}
                                             >
                                                 About
                                             </Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
-                                                className={`nav-link ${activeLink === '/price-list' ? 'active' : ''}`}
-                                                to="/price-list"
-                                                onClick={() => handleLinkClick('/price-list')}
-                                            >Pages</Link>
+                                                className={`nav-link ${activeLink === '/cognitive-training-programs' ? 'active' : ''}`}
+                                                to="/cognitive-training-programs"
+                                                onClick={() => handleLinkClick('/cognitive-training-programs')}
+                                            >Cognitive Training Programs</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
-                                                className={`nav-link ${activeLink === '/master-plan' ? 'active' : ''}`}
-                                                to="/master-plan"
-                                                onClick={() => handleLinkClick('/master-plan')}
-                                            >Services</Link>
+                                                className={`nav-link ${activeLink === '/screening-tests' ? 'active' : ''}`}
+                                                to="/screening-tests"
+                                                onClick={() => handleLinkClick('/screening-tests')}
+                                            >Screening Tests</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
-                                                className={`nav-link ${activeLink === '/floor-plan' ? 'active' : ''}`}
-                                                to="/floor-plan"
-                                                onClick={() => handleLinkClick('/floor-plan')}
-                                            >Doctors</Link>
+                                                className={`nav-link ${activeLink === '/therapeutic-areas' ? 'active' : ''}`}
+                                                to="/therapeutic-areas"
+                                                onClick={() => handleLinkClick('/therapeutic-areas')}
+                                            >Therapeutic Areas</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
-                                                className={`nav-link ${activeLink === '/location' ? 'active' : ''}`}
-                                                to="/location"
-                                                onClick={() => handleLinkClick('/location')}
-                                            >Contact</Link>
+                                                className={`nav-link ${activeLink === '/telerehabilitation' ? 'active' : ''}`}
+                                                to="/telerehabilitation"
+                                                onClick={() => handleLinkClick('/telerehabilitation')}
+                                            >Telerehabilitation</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link
+                                                className={`nav-link ${activeLink === '/resources' ? 'active' : ''}`}
+                                                to="/resources"
+                                                onClick={() => handleLinkClick('/resources')}
+                                            >Resources</Link>
                                         </li>
                                         <div className="nav-action">
                                             <div className="call-button">
                                                 <p>
-                                                    <Link to='tel: +919821123006'>
-                                                        {/* <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+                                                    <Link to='tel: +91 8800913399'>
+                                                        <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
                                                             <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
                                                                 <path strokeDasharray="64" strokeDashoffset="64" d="M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.3943 14.3943 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z">
                                                                     <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"></animate>
@@ -157,8 +164,8 @@ const Navbar = (props) => {
                                                                     <set attributeName="opacity" begin="1.8s;lineMdPhoneCallLoop0.begin+3.8s" to="0"></set>
                                                                 </path>
                                                             </g>
-                                                        </svg> */}
-                                                        Book an Appointment
+                                                        </svg>
+                                                        88009 13399
                                                     </Link>
                                                 </p>
                                             </div>

@@ -19,10 +19,18 @@
   color: #f8b334;
 }
 .QualityCard h3 {
-  font-size: 20px;
+  font-size: 35px;
   margin-bottom: 1rem;
 }
 .QualityCard p {
   font-size: 15px;
   margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 680px) {
+  .QualityCard h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
 }

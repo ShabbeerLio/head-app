@@ -1,0 +1,141 @@
+.Footer {
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+.Footer:before {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 360px;
+  height: 85%;
+  background-image: url("../../Assets/design.png");
+  content: "";
+}
+.Footer-main {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5rem 15px;
+  display: grid;
+  grid-template-columns: 24% 23% 23% 30%;
+  gap: 1rem;
+}
+.footer-down {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+}
+
+.footer-box img {
+  width: 70%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.footer-box-media {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.footer-box-media a p {
+  font-size: 15px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+.footer-box-media a p:hover {
+  color: black;
+  background-color: #f8b334;
+}
+.footer-box-media a p:hover svg {
+  color: rgb(78, 78, 78);
+}
+.footer-box-media a svg {
+  font-size: 15px;
+  color: #f8b334;
+}
+
+.footer-box h2 {
+  font-size: 20px;
+  color: black;
+}
+.footer-box h2:after {
+  content: "";
+  margin-top: 5px;
+  display: flex;
+  height: 2px;
+  width: 30%;
+  border-radius: 50px;
+  background-color: #f8b334;
+}
+.footer-box p {
+  font-size: 14px;
+  color: black;
+}
+
+.footer-box ul {
+  padding: 0;
+}
+.footer-box ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-box ul li p {
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 0px;
+  color: black;
+}
+.footer-box ul li a {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  font-size: 14px;
+  padding: 3px 0px;
+}
+.footer-box ul li a:hover {
+  color: black;
+}
+.footer-box ul li a svg {
+  margin-right: 10px;
+  color: #f8b334;
+}
+
+.footer-copyright {
+  width: 100%;
+  border-top: 1px solid rgb(190, 190, 190);
+  /* margin-top: 50px; */
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  text-decoration: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .Footer-main,
+  .footer-down {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .Footer-main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -23,7 +23,7 @@
   width: 100%;
   object-fit: cover;
   padding: 15px;
-  max-height: 130px;
+  max-height: 80px;
 }
 
 .navbar {
@@ -111,6 +111,9 @@
 .nav-action {
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: -42%;
 }
 
 .nav-button {
@@ -151,22 +154,21 @@
   justify-content: center;
   margin-left: 5px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
   color: black;
   width: 130px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-weight: 500;
   transition: opacity 0.3s ease-in-out;
   cursor: pointer;
   transition: all 0.3s;
   background-color: #f8b334;
-  border-radius: 5px;
-  margin-left: 20px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .call-button p a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .call-button p a svg {
   font-size: 18px;
@@ -281,9 +283,9 @@
 }
 
 .fix-icon-enquery p {
-  background-color: #283664;
+  background-color: #f8b334;
   padding: 12px 24px;
-  color: white;
+  color: black;
   border-radius: 8px;
   margin: 0;
   cursor: pointer;
@@ -320,7 +322,7 @@
 
 @media screen and (min-width: 1200px) {
   .nav-menu {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 

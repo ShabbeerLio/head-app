@@ -1,38 +1,42 @@
 .HomeAbout {
   width: 100%;
-  padding: 5rem 0rem;
+  padding: 6rem 0rem;
 }
-.HomeAbout-main {
+/* .HomeAbout-main {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 0px 15px;
-}
+} */
 
 .homeabout-left h2 {
-  text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 .homeabout-box {
   display: flex;
-  gap: 2rem;
+  gap: 8rem;
 }
 
 .homeabout-left {
   width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 3rem;
 }
-.homeabout-left h3 {
-  font-size: 25px;
+.homeabout-left p {
+  font-size: 15px;
   margin-bottom: 1rem;
 }
 .homeabout-left ul li {
   font-size: 18px;
 }
 .homeabout-left ul li::marker {
-  color: goldenrod;
+  color: #f8b334;
   font-size: 25px;
 }
 
@@ -49,49 +53,62 @@
   text-decoration: none;
   text-transform: uppercase;
   padding: 12px 24px;
-  background-color: goldenrod;
+  background-color: #f8b334;
   color: black;
   border-radius: 8px;
 }
 .homeabout-right {
   width: 50%;
+
 }
 .homeabout-right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 .homeabout-quality-box {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 4rem;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 4rem ;
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 1200px) {
-  .HomeAbout-main {
+  /* .HomeAbout-main {
     max-width: 1140px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 680px) {
   .homeabout-box {
     flex-wrap: wrap;
+    gap: 2rem;
   }
 
-  .homeabout-left,
   .homeabout-right {
     width: 100%;
+  }
+
+  .homeabout-left {
+    width: 100%;
+    padding: 1rem;
   }
   .homeabout-quality-box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     margin-top: 2rem;
+    padding: 1rem ;
   }
   .homeabout-button a {
     width: 100%;
+  }
+
+  .homeabout-left h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
   }
 }

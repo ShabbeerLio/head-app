@@ -1,5 +1,6 @@
 import React from 'react'
 import "./HomeAbout.css"
+import aboutimg from "../../Assets/About/aboutus.jpg"
 import { Link } from 'react-router-dom'
 import { FaUserDoctor, FaTruckMedical, FaChartLine } from "react-icons/fa6";
 import QualityCard from './QualityCard';
@@ -9,42 +10,32 @@ const HomeAbout = () => {
         {
             id: 1,
             icon: <FaUserDoctor />,
-            title: "Qualified Doctors",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+            title: "We offer integrated treatment with personalized solutions for mental and cognitive health.",
+            desc: "Discover our solution  HeadApp – Computer-Aided Cognitive Screening and Training specifically designed to aid patients with acquired brain injuries, neurodevelopmental disorders, and cognitive deficits in psychiatric conditions."
         },
-        {
-            id: 1,
-            icon: <FaTruckMedical />,
-            title: "Emergency vehicle",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-        },
-        {
-            id: 1,
-            icon: <FaChartLine />,
-            title: "Leading Technology",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-        }
     ]
     return (
         <div className='HomeAbout'>
             <div className='HomeAbout-main'>
                 <div className="homeabout-box">
-                    <div className="homeabout-right">
-                        <img src="https://static.vecteezy.com/system/resources/previews/028/534/356/non_2x/attractive-female-doctor-medical-group-generative-ai-free-photo.jpeg" alt="" />
-                    </div>
                     <div className="homeabout-left">
-                        <h2>About us</h2>
-                        <h3>We are trusted The Best Certificate Healthcare</h3>
-                        <ul>
+                        <h2>Cognitive Rehabilitation Therapy</h2>
+                        <p>Cognitive rehabilitation or cognitive retraining therapy aims to rebuild cognitive functions that have been impaired and help patients return to their daily lives.</p>
+                        <p>Cognitive rehabilitation refers to a number of therapies that offer retraining in cognitive functions. The main focus is to correct deficits in memory, concentration and attention, perception, learning, planning, sequencing, and judgment.</p>
+                        <p> Cognitive rehabilitation therapy (CRT) aims to enhance the person’s capacity to process and interpret information. This can improve the person’s ability to function in all aspects of daily life, such as  maintaining relationships with family and friends, working, and participating in their community.</p>
+                        {/* <ul>
                             <li>Scientific skills for getting a better result</li>
                             <li>A good environment for work</li>
                             <li>Professional doctors</li>
                             <li>Digital laboratory</li>
                             <li>Emergency services</li>
-                        </ul>
+                        </ul> */}
                         <div className="homeabout-button">
                             <Link to={"/about"}>About Us</Link>
                         </div>
+                    </div>
+                    <div className="homeabout-right">
+                        <img src={aboutimg} alt="" />
                     </div>
                 </div>
                 <div className="homeabout-quality-box">
