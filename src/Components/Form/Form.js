@@ -65,7 +65,7 @@ const Form = (props) => {
 
     return (
         <>
-            <h4>Interested in HeadApp?</h4>
+            <h4>Request a Free Consultation</h4>
             <form className='form' ref={form} onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <input

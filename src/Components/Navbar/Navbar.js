@@ -100,7 +100,7 @@ const Navbar = (props) => {
                                         <li className="nav-item">
                                             <Link
                                                 className={`nav-link ${activeLink === '/about' ? 'active' : ''}`}
-                                                to="/about"
+                                                to="/headapp/about"
                                                 onClick={() => handleLinkClick('/about')}
                                             >
                                                 About
@@ -109,7 +109,7 @@ const Navbar = (props) => {
                                         <li className="nav-item">
                                             <Link
                                                 className={`nav-link ${activeLink === '/cognitive-training-programs' ? 'active' : ''}`}
-                                                to="/cognitive-training-programs"
+                                                to="/headapp/cognitive-training-programs"
                                                 onClick={() => handleLinkClick('/cognitive-training-programs')}
                                             >Cognitive Training Programs</Link>
                                         </li>
@@ -209,11 +209,11 @@ const Navbar = (props) => {
                                     <p onClick={formIsOpen}>ENQUIRE NOW</p>
                                 </div>
                             )}
-                            {/* {formopen && (
+                            {formopen && (
                                 <>
-                                    <FormFloat formIsClose={formIsClose} />
+                                    {/* <FormFloat formIsClose={formIsClose} /> */}
                                 </>
-                            )} */}
+                            )}
                         </div>
                     </nav>
 

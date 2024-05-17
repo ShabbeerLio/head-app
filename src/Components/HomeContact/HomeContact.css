@@ -1,16 +1,21 @@
 .HomeContact {
   width: 100%;
-  /* padding: 6rem 0rem; */
+  padding: 6rem 0rem;
   background-color: #f1f1f1;
+  background-image: url(../../Assets/Contact/enquery.jpg);
 }
 
 .HomeContact-main {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .homecontact-left {
-  width: 50%;
+  width: 60%;
 }
 
 .homecontact-left img {
@@ -18,15 +23,61 @@
 }
 
 .homecontact-right {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .homecontact-right-box{
-    width: 80%;
+    width: 100%;
     border-radius: 8px;
     background-color: wheat;
     padding: 2rem;
+}
+
+.homecontact-left-box h2{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  width: 70%;
+  font-weight: 500;
+}
+.homecontact-left-box p{
+  margin-top: 20px;
+}
+.homecontact-left-box p a{
+  color: #e59c11;
+  font-weight: 500;
+}
+
+.homeleft-box-list{
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  width: 70%;
+  margin-top: 2rem;
+}
+.homeleft-box-list ul{
+  padding: 0;
+  margin: 0;
+}
+.homeleft-box-list ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.homeleft-box-list ul li:last-child{
+  padding-bottom: 0;
+}
+.homeleft-box-list ul li p{
+  margin: 0;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1200px) {
+  .HomeContact-main {
+    max-width: 1140px;
+  }
 }
