@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Training.css"
 import Tr1 from "../../Assets/Training/Attention-Overview-5b763aaf.jpg"
 import Tr2 from "../../Assets/Training/Working-Memory-Overview-2-7bead1c6.jpg"
 import Tr3 from "../../Assets/Training/Memory-Overview-647d9b5a.jpg"
 import Tr4 from "../../Assets/Training/Daily-Living-Overview-836f0b69.jpg"
 import Tr5 from "../../Assets/Training/Language-Ovierview-0afae473.jpg"
+import TrainingData from './TrainingData'
+import FreeTrial from '../../Components/FreeTrial/FreeTrial'
 
 const Training = () => {
     const data = [
@@ -47,6 +49,9 @@ const Training = () => {
             Language: 'World Finding and Production',
         },
     ];
+
+    const [selectedCategory, setSelectedCategory] = useState(TrainingData[0]);
+
     return (
         <div className='Training'>
             <div className='Training-main'>
@@ -87,21 +92,23 @@ const Training = () => {
                 <h2>Therapy programs at a glance</h2>
                 <div className="training-box">
                     <div className="training-categorty">
-                        <p>Attention</p>
-                        <p>Work Memory</p>
-                        <p>Memory</p>
-                        <p>Daily living / Executive Function</p>
-                        <p>Language / Aphasia</p>
+                        {TrainingData.map((category, index) => (
+                            <p key={index} onClick={() => setSelectedCategory(category)}>
+                                {category.name}
+                            </p>
+                        ))}
                     </div>
                     <div className="training-category-items">
-                        <h5>Attention Programs</h5>
-                        <p>A good working Attention level is the foundation for all continuing cognitive therapy. A patient may not be able to stay focused on a single task, avoiding distractions, can´t move from one task to another very easily, can´t do more than one thing at once, and can´t process things very quickly.</p>
-                        <div className="traning-category-image">
-                            <img src={Tr1} alt="" />
+                        <h5>{selectedCategory.name} Programs</h5>
+                        <p>{selectedCategory.description}</p>
+                        <div className="training-category-image">
+                            <img src={selectedCategory.image} alt={selectedCategory.name} />
+                            <img src={selectedCategory.table} alt={selectedCategory.name} />
                         </div>
                     </div>
                 </div>
             </div>
+            <FreeTrial />
         </div>
     )
 }

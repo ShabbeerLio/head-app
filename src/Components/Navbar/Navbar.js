@@ -115,30 +115,30 @@ const Navbar = (props) => {
                                         </li>
                                         <li className="nav-item">
                                             <Link
-                                                className={`nav-link ${activeLink === '/screening-tests' ? 'active' : ''}`}
-                                                to="/screening-tests"
-                                                onClick={() => handleLinkClick('/screening-tests')}
+                                                className={`nav-link ${activeLink === '/headapp/screening-tests' ? 'active' : ''}`}
+                                                to="/headapp/screening-tests"
+                                                onClick={() => handleLinkClick('/headapp/screening-tests')}
                                             >Screening Tests</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
-                                                className={`nav-link ${activeLink === '/therapeutic-areas' ? 'active' : ''}`}
-                                                to="/therapeutic-areas"
-                                                onClick={() => handleLinkClick('/therapeutic-areas')}
+                                                className={`nav-link ${activeLink === '/headapp/therapeutic-areas' ? 'active' : ''}`}
+                                                to="/headapp/therapeutic-areas"
+                                                onClick={() => handleLinkClick('/headapp/therapeutic-areas')}
                                             >Therapeutic Areas</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
-                                                className={`nav-link ${activeLink === '/telerehabilitation' ? 'active' : ''}`}
-                                                to="/telerehabilitation"
-                                                onClick={() => handleLinkClick('/telerehabilitation')}
+                                                className={`nav-link ${activeLink === '/headapp/telerehabilitation' ? 'active' : ''}`}
+                                                to="/headapp/telerehabilitation"
+                                                onClick={() => handleLinkClick('/headapp/telerehabilitation')}
                                             >Telerehabilitation</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
-                                                className={`nav-link ${activeLink === '/resources' ? 'active' : ''}`}
-                                                to="/resources"
-                                                onClick={() => handleLinkClick('/resources')}
+                                                className={`nav-link ${activeLink === '/headapp/resources' ? 'active' : ''}`}
+                                                to="/headapp/resources"
+                                                onClick={() => handleLinkClick('/headapp/resources')}
                                             >Resources</Link>
                                         </li>
                                         <div className="nav-action">

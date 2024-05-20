@@ -1,0 +1,76 @@
+.Telerehab {
+  margin-top: 90px;
+  width: 100%;
+  /* padding: 6rem 0rem; */
+}
+.Telerehab-main {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+  padding-bottom: 2rem;
+}
+
+.telerehab-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin: 4rem 0rem;
+}
+
+.telerehab-box-card img{
+width: 25%;
+object-fit: cover;
+aspect-ratio: 2/2;
+}
+
+.telerehab-box2{
+    display: flex;
+    gap: 2rem;
+    margin: 4rem 0rem;
+}
+
+.telerehab-box2-card img{
+width: 100%;
+object-fit: cover;
+border-radius: 8px 8px 0px 0px;
+}
+
+.telerehab-card-detail{
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-radius:0px 0px 8px 8px;
+}
+.telerehab-card-detail h5{
+    margin: 1rem 0;
+}
+
+.telerehab-box3{
+    padding: 2rem 0;
+}
+
+.telerehab-box3-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.telerehab-box3-card{
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+.telerehab-box3-card h5{
+    color: #e59c11;
+    font-size: 25px;
+}
+
+.telerehab-box3 img{
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+}
+@media screen and (min-width: 1200px) {
+  .Telerehab-main {
+    max-width: 1140px;
+  }
+}
