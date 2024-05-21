@@ -15,13 +15,13 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/headapp/" exact element={<Home />} />
-        <Route path="/headapp/about" exact element={<About />} />
-        <Route path="/headapp/cognitive-training-programs" exact element={<Training />} />
-        <Route path="/headapp/screening-tests" exact element={<Screening />} />
-        <Route path="/headapp/therapeutic-areas" exact element={<Therapeutic />} />
-        <Route path="/headapp/telerehabilitation" exact element={<Telerehab />} />
-        <Route path="/headapp/resources" exact element={<Resources />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/about" exact element={<About />} />
+        <Route path="/cognitive-training-programs" exact element={<Training />} />
+        <Route path="/screening-tests" exact element={<Screening />} />
+        <Route path="/therapeutic-areas" exact element={<Therapeutic />} />
+        <Route path="/telerehabilitation" exact element={<Telerehab />} />
+        <Route path="/resources" exact element={<Resources />} />
       </Routes>
       <Footer />
     </BrowserRouter>
