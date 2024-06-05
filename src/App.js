@@ -9,6 +9,7 @@ import Screening from './Pages/Screening/Screening';
 import Therapeutic from './Pages/Therapeutic/Therapeutic';
 import Telerehab from './Pages/Telerehab/Telerehab';
 import Resources from './Pages/Resources/Resources';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/therapeutic-areas" exact element={<Therapeutic />} />
         <Route path="/telerehabilitation" exact element={<Telerehab />} />
         <Route path="/resources" exact element={<Resources />} />
+        <Route path="/contact-us" exact element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

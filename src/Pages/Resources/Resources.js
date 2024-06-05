@@ -27,7 +27,7 @@ const Resources = () => {
                             <h3>Quick Start Guide – Therapist</h3>
                             <p>If you are already registered for the 14-day trial period or already have a licensed HeadApp account, please read the following step-by-step instruction carefully to get started.</p>
                             <div className="resources-detail-button">
-                                <Link>Download</Link>
+                                <Link to={"https://neurozip.com/wp-content/uploads/2022/09/Quick-Start-Guide-for-Therapists.pdf"}>Download</Link>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ const Resources = () => {
                             <h3>Patient’s Guide for Home Training</h3>
                             <p>Please provide your patients with this step-by-step guide to get started with the home training. In this writable pdf you can also enter the login data for your patient.</p>
                             <div className="resources-detail-button">
-                                <Link>Download</Link>
+                                <Link to={"https://neurozip.com/wp-content/uploads/2022/02/neurozip-patients-guide-home-training.pdf"}>Download</Link>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ const Resources = () => {
                             <h3>HeadApp Programs at a Glance</h3>
                             <p>This is a screening and therapy overview, therapy goals and purposes . Train with HeadApp, make use of your possibilities and have fun!</p>
                             <div className="resources-detail-button">
-                                <Link>Download</Link>
+                                <Link to={"https://neurozip.com/wp-content/uploads/2022/08/Screening-and-Therapy-Overview.pdf"}>Download</Link>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const Resources = () => {
                         <h5>Computer-Aided Cognitive Rehabilitation Introduction</h5>
                         <p>Fri, May 24, 2024, 12:00 pm – 1:00 pm ET (USA/Canada) — In this webinar, attendees will be introduced to HeadApp, learn more about its distinctive features, along with how to implement the program in a neuro-rehabilitation setting. In-Clinic and Telerehabilitation.</p>
                         <div className="resources-box3-right-button">
-                            <Link>Register Now</Link>
+                            <Link to={"https://neurozip.com/webinars/"}>Register Now</Link>
                         </div>
                     </div>
                 </div>

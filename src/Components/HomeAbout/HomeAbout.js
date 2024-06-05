@@ -31,7 +31,7 @@ const HomeAbout = () => {
                             <li>Emergency services</li>
                         </ul> */}
                         <div className="homeabout-button">
-                            <Link to={"/headapp/about"}>About Us</Link>
+                            <Link to={"/about"}>About Us</Link>
                         </div>
                     </div>
                     <div className="homeabout-right">

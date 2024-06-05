@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser';
 import "./Form.css"
 
 const Form = (props) => {
@@ -33,18 +34,18 @@ const Form = (props) => {
             setMessageSent(false);
         }, 2500);
 
-        // emailjs.sendForm(
-        //     'service_258k6c9',
-        //     'template_tydc87o',
-        //     form.current,
-        //     'ECMzb8lrOTXw_iayA'
-        // )
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         console.log("message sent")
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        emailjs.sendForm(
+            'service_h4k5no9',
+            'template_a1cepxh',
+            form.current,
+            '1s0j_F_KC5fcC_feN'
+        )
+            .then((result) => {
+                console.log(result.text);
+                console.log("message sent")
+            }, (error) => {
+                console.log(error.text);
+            });
 
         // Access the user's name, email, and message from the formData state
         const { user_name, user_number, user_email, message } = formData;
@@ -65,7 +66,12 @@ const Form = (props) => {
 
     return (
         <>
-            <h4>Request a Free Consultation</h4>
+            {/* <h4>Request a Free Consultation</h4> */}
+            {messageSent ? (
+                <div className='form-message'>
+                    <p>Message sent successfully!</p>
+                </div>
+            ) : (
             <form className='form' ref={form} onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <input
@@ -114,6 +120,7 @@ const Form = (props) => {
                     Book your Consultation
                 </button>
             </form>
+            )}
         </>
     )
 }

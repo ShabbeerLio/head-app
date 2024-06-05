@@ -12,7 +12,7 @@ const FreeTrial = () => {
                     <p>No Credit Card required / No Obligation</p>
                     <p>Explore everything from screenings to cognitive training and language exercises, embracing every opportunity along the way. </p>
                     <div className="freetrial-button">
-                        <Link>Start HeadApp</Link>
+                        <Link to={"https://start-headapp.helferservices.net/"}>Start HeadApp</Link>
                     </div>
                 </div>
                 <div className="freetrail-right">

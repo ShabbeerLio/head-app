@@ -2,7 +2,7 @@ import React from 'react'
 import "./Footer.css"
 import flogo from "../../Assets/Logo.png"
 import { Link } from 'react-router-dom'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaInstagram, FaEnvelope, FaPhone, FaLocationDot } from "react-icons/fa6";
+import { FaTwitter, FaLinkedinIn, FaYoutube,  FaEnvelope, FaPhone, FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
 
@@ -19,17 +19,17 @@ const Footer = () => {
                     <img src={flogo} alt="" />
                     <p>Explore everything from screenings to cognitive training and language exercises.</p>
                     <div className="footer-box-media">
-                        <Link >
+                        {/* <Link to={""}>
                             <p>
                                 <FaTwitter />
                             </p>
-                        </Link>
-                        <Link>
+                        </Link> */}
+                        <Link to={"https://www.linkedin.com/in/ferry-tomaszyk-4908a61a2/"}>
                             <p>
                                 <FaLinkedinIn />
                             </p>
                         </Link>
-                        <Link>
+                        <Link to={"https://www.youtube.com/user/FerrySound"}>
                             <p>
                                 <FaYoutube />
                             </p>
@@ -43,7 +43,7 @@ const Footer = () => {
                         <li><Link onClick={scroll}to="/about">About</Link></li>
                         <li><Link onClick={scroll}to="/contact-us">Send Enquery</Link></li>
                         <li><Link onClick={scroll}to="/contact-us">Contact Us</Link></li>
-                        <li><Link onClick={scroll}to="/privacy-policy">privacy policy</Link></li>
+                        <li><Link onClick={scroll}to="https://neurozip.com/privacy/">privacy policy</Link></li>
                     </ul>
                 </div>
                 <div className="footer-box">
