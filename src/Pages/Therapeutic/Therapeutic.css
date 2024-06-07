@@ -1,41 +1,65 @@
 .Therapeutic {
-    margin-top: 90px;
-    width: 100%;
-    /* padding: 6rem 0rem; */
-  }
-  .Therapeutic-main {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0px 15px;
-    padding-bottom: 2rem;
-  }
-  .Therapeutic-main h2 {
-    border-bottom: 1px solid #e59c11;
-    padding-bottom: 5px;
-  }
+  margin-top: 90px;
+  width: 100%;
+  /* padding: 6rem 0rem; */
+}
 
-  .therapeutic-box{
-    display: flex;
+.Therapeutic-main {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+  padding-bottom: 2rem;
+}
+
+.Therapeutic-main h2 {
+  border-bottom: 1px solid #e59c11;
+  padding-bottom: 5px;
+}
+
+.therapeutic-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.therapeutic-box-left {
+  width: 60%;
+  display: flex;
+}
+
+.therapeutic-box-right {
+  width: 40%;
+}
+
+.therapeutic-box-right img {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .Therapeutic-main {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
+  .therapeutic-box {
+    flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
-  .therapeutic-box-left{
-    width: 60%;
+  .therapeutic-box-left {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
   }
-  .therapeutic-box-right{
-    width: 40%;
-  }
-  .therapeutic-box-right img{
+
+  .therapeutic-box-right {
     width: 100%;
   }
-
-
-  @media screen and (min-width: 1200px) {
-    .Therapeutic-main {
-      max-width: 1140px;
-    }
-  }
+}

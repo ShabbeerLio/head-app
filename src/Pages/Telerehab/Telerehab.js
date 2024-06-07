@@ -84,7 +84,7 @@ const Telerehab = () => {
         <div className='Telerehab'>
             <div className='Telerehab-main'>
                 <div className="about-title">
-                    <h1> Therapeutic focus areas</h1>
+                    <h1> Telerehabilitation </h1>
                     <h5>Would you like to assign cognitive homework, expand your patient reach, and strengthen loyalty to your practice?</h5>
                     <p>This is your solution! Explore the therapy plan feature seamlessly integrated into HeadApp, available to you at no additional cost.</p>
                 </div>

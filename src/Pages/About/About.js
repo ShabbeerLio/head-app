@@ -8,8 +8,8 @@ import screen1 from "../../Assets/About/Screen1.webp"
 import screen2 from "../../Assets/About/Screen2.webp"
 import screen3 from "../../Assets/About/Screen3.webp"
 import FreeTrial from '../../Components/FreeTrial/FreeTrial'
-import { Link } from 'react-router-dom'
-import ReactOwlCarousel from 'react-owl-carousel'
+// import { Link } from 'react-router-dom'
+// import ReactOwlCarousel from 'react-owl-carousel'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 

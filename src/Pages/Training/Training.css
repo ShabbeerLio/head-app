@@ -3,6 +3,7 @@
   width: 100%;
   /* padding: 6rem 0rem; */
 }
+
 .Training-main {
   width: 100%;
   margin-right: auto;
@@ -14,22 +15,26 @@
 .training-box {
   margin: 3rem 0;
 }
+
 .training-box th {
   background-color: #223046;
   color: white;
   padding: 10px 15px;
   text-align: center;
 }
+
 .training-box tr {
   background-color: #f8b334;
   color: black;
   text-align: center;
 }
+
 .training-box tr td {
   border: none;
   border-right: 1px solid rgb(223, 223, 223);
   padding: 5px;
 }
+
 .training-box tr td:last-child {
   border-right: none;
 }
@@ -39,6 +44,7 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
 }
+
 .training-categorty p {
   text-align: center;
   display: flex;
@@ -48,6 +54,7 @@
   border-radius: 8px;
   background-color: #f8b334;
   cursor: pointer;
+  margin: 0;
 }
 
 .training-category-image {
@@ -70,5 +77,21 @@
 @media screen and (min-width: 1200px) {
   .Training-main {
     max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .training-categorty {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .training-box table{
+    font-size: 10px;
+  }
+
+  .training-category-items img {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }

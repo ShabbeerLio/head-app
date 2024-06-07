@@ -2,7 +2,7 @@ import React from 'react'
 import "./HomeAbout.css"
 import aboutimg from "../../Assets/About/aboutus.jpg"
 import { Link } from 'react-router-dom'
-import { FaUserDoctor, FaTruckMedical, FaChartLine } from "react-icons/fa6";
+import { FaUserDoctor } from "react-icons/fa6";
 import QualityCard from './QualityCard';
 
 const HomeAbout = () => {

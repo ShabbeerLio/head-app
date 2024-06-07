@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import bannerimg from "../../Assets/Banner/banner1.jpeg"
 import banner2 from "../../Assets/Banner/banner2.jpeg"
 import "./Banner.css"
@@ -6,7 +6,7 @@ import ReactOwlCarousel from 'react-owl-carousel'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-import { FaHandHoldingMedical, FaClockRotateLeft, FaFileMedical } from "react-icons/fa6";
+// import { FaHandHoldingMedical, FaClockRotateLeft, FaFileMedical } from "react-icons/fa6";
 const Banner = () => {
 
     return (

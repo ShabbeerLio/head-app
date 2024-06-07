@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import "./Training.css"
-import Tr1 from "../../Assets/Training/Attention-Overview-5b763aaf.jpg"
-import Tr2 from "../../Assets/Training/Working-Memory-Overview-2-7bead1c6.jpg"
-import Tr3 from "../../Assets/Training/Memory-Overview-647d9b5a.jpg"
-import Tr4 from "../../Assets/Training/Daily-Living-Overview-836f0b69.jpg"
-import Tr5 from "../../Assets/Training/Language-Ovierview-0afae473.jpg"
+// import Tr1 from "../../Assets/Training/Attention-Overview-5b763aaf.jpg"
+// import Tr2 from "../../Assets/Training/Working-Memory-Overview-2-7bead1c6.jpg"
+// import Tr3 from "../../Assets/Training/Memory-Overview-647d9b5a.jpg"
+// import Tr4 from "../../Assets/Training/Daily-Living-Overview-836f0b69.jpg"
+// import Tr5 from "../../Assets/Training/Language-Ovierview-0afae473.jpg"
 import TrainingData from './TrainingData'
 import FreeTrial from '../../Components/FreeTrial/FreeTrial'
 

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import "./Navbar.css"
 import Logo from "../../Assets/Logo.png"
 import { Link } from 'react-router-dom';
-import { IoLogoWhatsapp } from "react-icons/io5";
+import FormFloat from './FormFloat';
+// import { IoLogoWhatsapp } from "react-icons/io5";
 // import FormFloat from './FormFloat';
 
 const Navbar = (props) => {
@@ -25,15 +26,16 @@ const Navbar = (props) => {
     }, []);
 
     const handleLinkClick = (path) => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
         setActiveLink(path);
         closeMenu();
     };
 
     const closeMenu = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'auto'
-        });
+
         const navbarCollapse = document.getElementById('navbarSupportedContent');
         if (navbarCollapse.classList.contains('show')) {
             navbarCollapse.classList.remove('show');
@@ -63,9 +65,9 @@ const Navbar = (props) => {
                             <div className="company-logo">
                                 <div className="company-logo-box">
                                     <Link
-                                        className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
+                                        className="nav-link "
                                         to="/"
-                                        onClick={() => handleLinkClick('/')}
+                                    // onClick={() => handleLinkClick('/')}
                                     >
                                         <img src={Logo} alt="" />
                                     </Link>
@@ -79,7 +81,8 @@ const Navbar = (props) => {
                                     aria-controls="navbarSupportedContent"
                                     aria-expanded="false"
                                     aria-label="Toggle navigation"
-                                    onClick={closeMenu}>
+                                    onClick={closeMenu}
+                                >
                                     <span className="toggler-icon top-bar"></span>
                                     <span className="toggler-icon middle-bar"></span>
                                     <span className="toggler-icon bottom-bar"></span>
@@ -180,7 +183,7 @@ const Navbar = (props) => {
                             )}
                             {formopen && (
                                 <>
-                                    {/* <FormFloat formIsClose={formIsClose} /> */}
+                                    <FormFloat formIsClose={formIsClose} />
                                 </>
                             )}
                         </div>

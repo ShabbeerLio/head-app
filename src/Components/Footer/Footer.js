@@ -2,7 +2,7 @@ import React from 'react'
 import "./Footer.css"
 import flogo from "../../Assets/Logo.png"
 import { Link } from 'react-router-dom'
-import { FaTwitter, FaLinkedinIn, FaYoutube,  FaEnvelope, FaPhone, FaLocationDot } from "react-icons/fa6";
+import { FaLinkedinIn, FaYoutube,  FaEnvelope, FaPhone, FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
 

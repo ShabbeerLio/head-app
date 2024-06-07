@@ -69,10 +69,10 @@ const Resources = () => {
                     <h1>Video Presentations</h1>
                     <h2>Introduction to HeadApp</h2>
                     <h5>In this video, you will be introduced to HeadApp, learn more about its distinctive features, along with how to implement the program in a rehabilitation setting.</h5>
-                    <iframe width="750" height="422" src="https://www.youtube.com/embed/nt6ednRLMlU" title="HeadApp - Cognitive Rehabilitation | Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/nt6ednRLMlU" title="HeadApp - Cognitive Rehabilitation | Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <h2>HeadApp A Powerful ADHD Solution</h2>
                     <h5>Improve Learning, Increase Attention and Working Memory, utilizing the brain’s ability to learn new skills and behaviors through dedicated training</h5>
-                    <iframe width="750" height="422" src="https://www.youtube.com/embed/onWy43_ruQA" title="HeadApp - A Powerful ADHD Solution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/onWy43_ruQA" title="HeadApp - A Powerful ADHD Solution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <h2>HeadApp in major psychiatric disorders</h2>
                     <h5>Eye-Movement Desensitization and Reprocessing Therapy (EMDR) combined with HeadApp – Cognitive Remediation</h5>
                     <p>Alfred Borrelli | Psychotherapist | New Jersey / New York City</p>
@@ -80,7 +80,7 @@ const Resources = () => {
                     <p>EMDR therapy facilitates the accessing and processing of traumatic memories and other adverse life experiences to bring these to an adaptive resolution.</p>
                     <p>Computerized cognitive remediation with HeadApp has been shown to be effective in improving both cognition and functioning.</p>
                     <p>Elimination of emotional distress and improving cognition leads to improved patient outcomes!</p>
-                    <iframe width="750" height="422" src="https://www.youtube.com/embed/2TNIw8a1W1U" title="EMDR &amp; HeadApp | Combination Therapy | Traumatic Memories" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/2TNIw8a1W1U" title="EMDR &amp; HeadApp | Combination Therapy | Traumatic Memories" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
             <FreeTrial />

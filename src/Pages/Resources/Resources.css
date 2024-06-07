@@ -69,6 +69,7 @@
 
 .resources-box3-right-button {
   margin-top: 2rem;
+  display: flex;
 }
 
 .resources-box3-right-button a {
@@ -103,6 +104,8 @@
   padding-bottom: 5rem;
   margin: 2rem 0;
   border-bottom: 1px solid #222362;
+  width: 750px;
+  height: 422px;
 }
 
 .resources-detail-button a {
@@ -112,6 +115,7 @@
   border-radius: 8px;
   padding: 10px 20px;
 }
+
 .resources-detail-button {
   margin: 2rem 0 1rem 0;
 }
@@ -119,5 +123,53 @@
 @media screen and (min-width: 1200px) {
   .Resources-main {
     max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .resources-box2 {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+  }
+
+  .resources-detail-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .resources-detail-button a {
+    width: 100%;
+  }
+
+  .resources-box3-right-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .resources-box3 {
+    flex-wrap: wrap;
+  }
+
+  .resources-box3-left {
+    width: 100%;
+  }
+
+  .resources-box3-right {
+    width: 100%;
+  }
+
+  .resources-box3-right h2,
+  .resources-box3-right p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .resources-box4 iframe {
+    width: 100%;
+    height: 322px;
   }
 }
